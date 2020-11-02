@@ -1,0 +1,40 @@
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+
+import Cross from "./Cross";
+import Heart from "./Heart";
+import Progress from "./Progress";
+import Character from "./Character";
+
+const styles = StyleSheet.create({
+  row: {
+    flexDirection: "row",
+    padding: 16,
+    alignItems: "center",
+    justifyContent: "space-evenly",
+  },
+  title: {
+    fontSize: 24,
+    paddingLeft: 16,
+    marginBottom: 16,
+  },
+  top: {
+    marginTop: 24,
+  },
+});
+
+const Header = () => {
+  return (
+    <View style={styles.top}>
+      <View style={styles.row}>
+        <Cross />
+        <Progress />
+        <Heart />
+      </View>
+      <Text style={styles.title}>Translate this sentence</Text>
+      <Character />
+    </View>
+  );
+};
+
+export default Header;

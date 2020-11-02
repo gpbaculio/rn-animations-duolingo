@@ -1,5 +1,8 @@
 {
   "expo": {
+    "experiments": {
+      "turboModules": true
+    },
     "name": "duolingo",
     "slug": "duolingo",
     "version": "1.0.0",
